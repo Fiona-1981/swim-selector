@@ -1,0 +1,33 @@
+public class MyClass {
+
+  public static void main(String[] args) {
+
+
+    System.out.println("Input your women's short course breaststroke PBs here!" + '\n');
+
+    double worldRecordFifty = 28.56;
+    double worldRecordOneHundred = 62.36;
+    double worldRecordTwoHundred = 134.39;
+    double myFifty = 44.81;
+    double myOneHundred = 94.84;
+    double myTwoHundred = 204;
+    double fifty = myFifty / worldRecordFifty;
+    double oneHundred = myOneHundred / worldRecordOneHundred;
+    double twoHundred = myTwoHundred / worldRecordTwoHundred;
+
+    //System.out.println("Here is your 50m calculation: " + fifty);
+    //System.out.println("Here is your 100m calculation: " + oneHundred);
+    //System.out.println("Here is your 200m calculation: " + twoHundred + '\n');
+
+if (fifty < oneHundred && fifty < twoHundred)
+System.out.println("You should swim the fifty metres.");
+
+else if (oneHundred < fifty && oneHundred < twoHundred)
+System.out.println("You should swim the one hundred metres.");
+
+else if (twoHundred < oneHundred && twoHundred < fifty)
+System.out.println("You should swim the two hundred metres.");
+      
+  }
+
+}
